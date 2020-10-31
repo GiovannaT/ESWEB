@@ -44,24 +44,27 @@
         <li class="nav-item">
           <a href="#hidratantes" class="nav-link">Hidratantes</a>
         </li>
-        <li>
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-              data-toggle="dropdown" aria-haspopup="true">
-              Entre ou Cadastre-se
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+        <li class="nav-item ">
+          <a class="nav-link" href="/front/views/login.html">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/front/views/cadastro.html">Cadastre-se</a>
+        </li>
+        <li class="nav-item">
+          <div class="container-pessoal justify-content-end">
+            <button type="button" class="btn btn-secondary">
+              <img src="/front/images/icons/basket.svg" alt="">
+            </button>
           </div>
         </li>
-        <div class="container-pessoal justify-content-end"></div>
-        <button type="button" class="btn btn-secondary rounded-circle">
-          <img src="/front/images/icons/basket.svg" alt="">
-        </button>
+
+        <form class="form-inline pl-2 ">
+          <input class="form-control mr-sm-2 " type="search" placeholder="Pesquisar produtos" aria-label="Search">
+          <button class="btn bg-light my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+
+
+
       </ul>
     </div>
   </nav>
@@ -271,7 +274,7 @@
                   <div class="col-md-8">
                     <div class="card-body ">
                       <div class="form-row">
-                        <h5 class="desc card-title mr-auto p-2 bd-highlight"></h5>
+                        <h5 class="desc card-title mr-auto p-2 bd-highlight">Capricho Day&Night</h5>
                         <h5 class="desc card-title p-2 bd-highlight">R$ 67,90</h5>
                       </div>
                       <p class="card-text">Capricho Day&Night Desodorante Colônia 50ml cada</p>
@@ -301,12 +304,12 @@
               <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                    <img src="/front/images/mamaebebe.jpg" class="card-img mt-2" alt="Mamae Bebe">
+                    <img src="/front/images/mamaebebe.jpg" class="card-img mt-2" alt="Mamae Bebê">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
                       <div class="form-row">
-                        <h5 class="card-title mr-auto p-2 bd-highligh"></h5>
+                        <h5 class="card-title mr-auto p-2 bd-highligh">Colônia Mamãe e Bebê</h5>
                         <h5 class="card-title p-2 bd-highlight">R$ 46,90</h5>
                       </div>
                       <p class="card-text">Colônia Mamãe e Bebê</p>
@@ -599,8 +602,8 @@
     </div>
   </div>
 
-  <div class="container">
-    <p class="text-uppercase mw-100 display-1 font-weight-bold" id="sabonetes">Hidratantes</p>
+  <div class="container pb-5">
+    <p class="text-uppercase mw-100 display-1 font-weight-bold" id="hidratantes">Hidratantes</p>
     <h3 class="display-3 lead">Cuidar do seu corpo é ato de amor consigo mesmo</h3>
   </div>
 
