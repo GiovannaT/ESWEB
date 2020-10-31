@@ -1,0 +1,94 @@
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+:root{
+    --color-background: #241414;
+    --color-text-base: #f1d49f;
+}
+
+*{
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;/*viewport é o que é visto no site*/
+}
+
+body {
+    background-color: #241414;
+    font-family: Oswald;
+}
+
+.card-deck{
+    border-color: transparent;
+}
+
+@media(max-width: 699px){
+    :root{
+        font-size: 40%;
+    }
+}
+
+a:link{
+    color: khaki;
+    text-decoration: none;
+}
+a:hover{
+    color: lightgoldenrodyellow;
+}
+a:active{
+    color: #ffffff
+}
+/* 
+.navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar button{
+    justify: right;
+}
+.jumbotron{
+    color: #000000;
+}
+
+.jumbotron h1{
+    justify-content: center;
+    align-items: centers;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+*/
+ .container{
+    font-size: 50px;
+    padding-top: 5%;
+    color: #f1d49f;
+    justify-content: center;
+}
+/*
+.container-center{
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.container-links{
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25%;
+    padding-right: 15%;
+    color: #f1d49f;
+    text-decoration-color: #f1d49f;
+}
+/* .content-section card{
+    border: transparent;
+    border-radius: 50%;
+} */
+
+

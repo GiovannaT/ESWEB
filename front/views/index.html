@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Fontes-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Quicksand:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <!--Icones-->
+  <link rel="icon" type="image/png" sizes="32x32" href="front/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="front/images/icons/favicon-16x16.png">
+  <title>Perfumaria X</title>
+
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="/bootstrap-4.5.3/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="/bootstrap-4.5.3/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/bootstrap-4.5.3/dist/js/jquery-3.5.1.min.js"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="/front/styles/main.css">
+
+</head>
+
+<body>
+  <!--BARRA DE NAVEGAÇÃO SUPERIOR-->
+  <nav class="navbar navbar-expand fixed-top navbar-dark md-light type d-flex justify-content-around">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="#" class="navbar-brand nav-pills nav-fill">
+            <img src="/front/images/icons/favicon-32x32.png" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#perfumes" class="nav-link">Perfumes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#sabonetes" class="nav-link">Sabonetes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#hidratantes" class="nav-link">Hidratantes</a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true">
+              Entre ou Cadastre-se
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </li>
+        <div class="container-pessoal justify-content-end"></div>
+        <button type="button" class="btn btn-secondary rounded-circle">
+          <img src="/front/images/icons/basket.svg" alt="">
+        </button>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-section">
+    <div class="jump">
+      <div class="jumbotron">
+        <div class="card-deck">
+          <div class="card border-light rounded-circle mb-3 bg-transparent bd-transparent">
+            <img src="/front/images/Perfume.png" alt="Perfumes" class="card-img-top">
+          </div>
+          <div class="card border-light rounded-circle   mb-3 bg-transparent">
+            <img src="/front/images/Hidratantes.png" alt="Hidratantes" class="card-img-top">
+          </div>
+          <div class="card border-light rounded-circle mb-3 bg-transparent">
+            <img src="/front/images/Sabonetes.png" alt="Sabonetes" class="card-img-top">
+          </div>
+        </div>
+        <h1 class="display-1 lead ">Cuide do que há de melhor em você</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="text-uppercase mw-100 display-1 font-weight-bold" id="perfumes">Perfumes</p>
+    <h3 class="display-3 lead">Encontre as melhores fragrâncias e escolha a sua preferida.</h3>
+    <div class="container-links">
+
+      <button type="button" class="btn btn-lg"><a href="#femininos">Femininos</a></button>
+      <button type="button" class="btn btn-lg"><a href="#masculinos">Masculinos</a></button>
+      <button type="button" class="btn btn-lg"><a href="#infantis">Infantis</a></button>
+      <button type="button" class="btn btn-lg"><a href="#importados">Importados</a></button>
+      <button type="button" class="btn btn-lg"><a href="#nacionais">Nacionais</a></button>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <!--PERFUMES FEMININOS-->
+    <div class="jump">
+      <div class="jumbotron">
+        <blockquote class="blockquote">
+          <h1 class="display-4 mb-0" id="femininos">Perfumes femininos</h1>
+        </blockquote>
+        <div class="card-deck">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="/front/images/Givenchy.jpg" class="card-img mt-2" alt="Givenchy">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body ">
+                  <div class="form-row">
+                    <h5 class="desc card-title mr-auto p-2 bd-highlight">Givenchy</h5>
+                    <h5 class="desc card-title p-2 bd-highlight">R$ 248,00</h5>
+                  </div>
+                  <p class="card-text">Perfume Givenchy Ange ou Démon Feminino Eau de Parfum</p>
+                  <form>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                          <option selected>Escolher...</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                      <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-light">+ Carrinho</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--CARD 2-->
+
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="/front/images/prada.jpg" class="card-img mt-2" alt="Prada">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="form-row">
+                    <h5 class="card-title mr-auto p-2 bd-highligh">Prada</h5>
+                    <h5 class="card-title p-2 bd-highlight">R$ 329,00</h5>
+                  </div>
+                  <p class="card-text">Perfume Prada Les Infusions de Prada Iris Feminino Eau de Parfum</p>
+                  <form>
+                    <div class="form-row align-items-center">
+                      <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                          <option selected>Escolher...</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                      <div class="col-auto my-1">
+                        <button type="submit" class="btn btn-light">+ Carrinho</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PERFUMES MASCULINOS-->
+        <div class="jump">
+          <div class="jumbotron">
+            <blockquote class="blockquote">
+              <h1 class="display-4 mb-0" id="masculinos">Perfumes masculinos</h1>
+            </blockquote>
+            <div class="card-deck">
+
+              <!--CARD 1-->
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/front/images/212.jpg" class="card-img mt-2" alt="212">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body ">
+                      <div class="form-row">
+                        <h5 class="desc card-title mr-auto p-2 bd-highlight">Carolina Herrera 212</h5>
+                        <h5 class="desc card-title p-2 bd-highlight">R$ 419,00</h5>
+                      </div>
+                      <p class="card-text">Perfume Carolina Herrera 212 VIP Masculino Eau de Toilette</p>
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Quantidade</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-light">+ Carrinho</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--CARD 2-->
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/front/images/Givenchy masc.jpg" class="card-img mt-2" alt="Givenchy Masculino">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="form-row">
+                        <h5 class="card-title mr-auto p-2 bd-highligh">Givenchy Gentleman</h5>
+                        <h5 class="card-title p-2 bd-highlight">R$ 399,00</h5>
+                      </div>
+                      <p class="card-text">Perfume Givenchy Gentleman Boisée Masculino Eau de Parfum</p>
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Escolher...</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-light ">+ Carrinho</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PERFUMES INFANTIS-->
+        <div class="jump">
+          <div class="jumbotron">
+            <blockquote class="blockquote">
+              <h1 class="display-4 mb-0" id="infantis">Perfumes Infantis</h1>
+            </blockquote>
+            <div class="card-deck">
+
+              <!--CARD 1-->
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/front/images/dayenight.jpg" class="card-img mt-2" alt="Capricho Day and Night">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body ">
+                      <div class="form-row">
+                        <h5 class="desc card-title mr-auto p-2 bd-highlight"></h5>
+                        <h5 class="desc card-title p-2 bd-highlight">R$ 67,90</h5>
+                      </div>
+                      <p class="card-text">Capricho Day&Night Desodorante Colônia 50ml cada</p>
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Quantidade</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-light">+ Carrinho</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--CARD 2-->
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/front/images/mamaebebe.jpg" class="card-img mt-2" alt="Mamae Bebe">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="form-row">
+                        <h5 class="card-title mr-auto p-2 bd-highligh"></h5>
+                        <h5 class="card-title p-2 bd-highlight">R$ 46,90</h5>
+                      </div>
+                      <p class="card-text">Colônia Mamãe e Bebê</p>
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Escolher...</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-light ">+ Carrinho</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PERFUMES IMPORTADOS-->
+        <div class="jump">
+          <div class="jumbotron">
+            <blockquote class="blockquote">
+              <h1 class="display-4 mb-0" id="importados">Perfumes Importados</h1>
+            </blockquote>
+            <div class="card-deck">
+
+              <!--CARD 1-->
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/front/images/ysl.jpg" class="card-img mt-2" alt="Armani">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body ">
+                      <div class="form-row">
+                        <h5 class="desc card-title mr-auto p-2 bd-highlight">Giorgio Armani</h5>
+                        <h5 class="desc card-title p-2 bd-highlight">R$ 423,00</h5>
+                      </div>
+                      <p class="card-text">Perfume Armani Code Absolu Homme Masculino Eau de Parfum</p>
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Quantidade</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-light">+ Carrinho</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--CARD 2-->
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/front/images/lancome.jpg" class="card-img mt-2" alt="YSL">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="form-row">
+                        <h5 class="card-title mr-auto p-2 bd-highligh">Lancôme</h5>
+                        <h5 class="card-title p-2 bd-highlight">R$ 299,00</h5>
+                      </div>
+                      <p class="card-text">Perfume Lancôme La Vie Est Belle Eau de Parfum</p>
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Escolher...</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-light ">+ Carrinho</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PERFUMES NACIONAIS-->
+        <div class="jump">
+          <div class="jumbotron">
+            <blockquote class="blockquote">
+              <h1 class="display-4 mb-0" id="importados">Perfumes Nacionais</h1>
+            </blockquote>
+            <div class="card-deck">
+
+              <!--CARD 1-->
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/front/images/KAIAK.jpg" class="card-img mt-2" alt="Kaiak">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body ">
+                      <div class="form-row">
+                        <h5 class="desc card-title mr-auto p-2 bd-highlight">Kaiak Masculino</h5>
+                        <h5 class="desc card-title p-2 bd-highlight">R$ 100,00</h5>
+                      </div>
+                      <p class="card-text">Colônia Kaiak Unissex</p>
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Quantidade</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-light">+ Carrinho</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--CARD 2-->
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/front/images/Egeo.jpg" class="card-img mt-2" alt="Egeo">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="form-row">
+                        <h5 class="card-title mr-auto p-2 bd-highligh">Egeo</h5>
+                        <h5 class="card-title p-2 bd-highlight">R$ 39,90</h5>
+                      </div>
+                      <p class="card-text">Colônia Egeo Choc Pocket 30ml</p>
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto my-1">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Escolher...</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                          <div class="col-auto my-1">
+                            <button type="submit" class="btn btn-light ">+ Carrinho</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="text-uppercase mw-100 display-1 font-weight-bold" id="sabonetes">Sabonetes</p>
+    <h3 class="display-3 lead">Cuidar do seu corpo é ato de amor consigo mesmo</h3>
+    <div class="container-links">
+
+      <button type="button" class="btn btn-lg"><a href="#barra">Em barra</a></button>
+      <button type="button" class="btn btn-lg"><a href="#liquidos">Líquidos</a></button>
+    </div>
+  </div>
+
+  <!--SABONETES EM BARRA-->
+  <div class="jump">
+    <div class="jumbotron">
+      <blockquote class="blockquote">
+        <h1 class="display-4 mb-0" id="barra">Sabonetes em Barra</h1>
+      </blockquote>
+      <div class="card-deck">
+
+        <!--CARD 1-->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="/front/images/sabonete1.jpg" class="card-img mt-2" alt="Sabonete Korres">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ">
+                <div class="form-row">
+                  <h5 class="desc card-title mr-auto p-2 bd-highlight">Korres</h5>
+                  <h5 class="desc card-title p-2 bd-highlight">R$ 3,90</h5>
+                </div>
+                <p class="card-text">Sabonete em Barra Korres Maça Cremoso</p>
+                <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Quantidade</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button type="submit" class="btn btn-light">+ Carrinho</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--SABONETES LIQUIDOS-->
+  <div class="jump">
+    <div class="jumbotron">
+      <blockquote class="blockquote">
+        <h1 class="display-4 mb-0" id="liquidos">Sabonetes Líquidos</h1>
+      </blockquote>
+      <div class="card-deck">
+
+        <!--CARD 1-->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="/front/images/sabonete2liquido.jpg" class="card-img mt-2" alt="Sabonete Liquido Clinique">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ">
+                <div class="form-row">
+                  <h5 class="desc card-title mr-auto p-2 bd-highlight">Clinique</h5>
+                  <h5 class="desc card-title p-2 bd-highlight">R$ 49,00</h5>
+                </div>
+                <p class="card-text">Sabonete Cremoso Facial Foaming Sonic</p>
+                <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Quantidade</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button type="submit" class="btn btn-light">+ Carrinho</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="text-uppercase mw-100 display-1 font-weight-bold" id="sabonetes">Hidratantes</p>
+    <h3 class="display-3 lead">Cuidar do seu corpo é ato de amor consigo mesmo</h3>
+  </div>
+
+  <!--CLASSE DE HIDRATANTES-->
+  <div class="jump">
+    <div class="jumbotron">
+      <div class="card-deck">
+
+        <!--CARD 1-->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2">
+              <img src="/front/images/Hidratante Good Girl.jpeg" class="card-img mt-2" alt="Hidratante Good Girl">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ">
+                <div class="form-row">
+                  <h5 class="desc card-title mr-auto p-2 bd-highlight">Good Girl</h5>
+                  <h5 class="desc card-title p-2 bd-highlight">R$ 499,00</h5>
+                </div>
+                <p class="card-text">Body Cream Carolina Herrera Good Girl Feminino</p>
+                <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Quantidade</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button type="submit" class="btn btn-light">+ Carrinho</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 2-->
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4 pl-2">
+              <img src="/front/images/hidratante sephora.jpg" class="card-img mt-2" alt="Hidratante Sephora">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body ">
+                <div class="form-row">
+                  <h5 class="desc card-title mr-auto p-2 bd-highlight">Sephora</h5>
+                  <h5 class="desc card-title p-2 bd-highlight">R$ 499,00</h5>
+                </div>
+                <p class="card-text">Creme Corporal Hidratante Sephora Collection Moisturizing Body Milk</p>
+                <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                      <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Quantidade</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    <div class="col-auto my-1">
+                      <button type="submit" class="btn btn-light">+ Carrinho</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+    .type {
+      background-color: black;
+    }
+  </style>
+
+</body>
+
+</html>
