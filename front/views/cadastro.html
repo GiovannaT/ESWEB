@@ -47,28 +47,19 @@
 
     <div class="containerpai pl-5">
         <div class="col-md-8 order-md-1">
-            <form class="needs-validation pb-5" novalidate>
-                <div class="row pl-0">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationCustom01">Primeiro Nome</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                        <div class="invalid-feedback">
-                            É obrigatório o Nome!
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="lastName">Sobrenome</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                        <div class="invalid-feedback">
-                            É obrigatório o sobrenome!
-                        </div>
+            <form class="needs-validation pb-5" id="myForm" novalidate>
+                <div class="row mb-3">
+                    <label for="validationCustom01">Nome</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Seu nome" value="" required="">
+                    <div class="invalid-feedback">
+                        É obrigatório o Nome!
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <label for="user">Nome de usuário</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="username" placeholder="Nome de usuário" required="">
+                        <input type="text" class="form-control" id="username" placeholder="User" required="">
                         <div class="invalid-feedback" style="width: 100%;">
                             É obrigatório o nome de usuário!
                         </div>
@@ -86,13 +77,31 @@
                 </div>
 
                 <div class="row mb-3">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="123.456.789-10">
+                    <div class="invalid-feedback">
+                        Insira um CPF válido!
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Senha">
+                    <div class="invalid-feedback">
+                        Defina uma senha!
+                    </div>
+                </div>
+
+                <div class="row mb-3">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="email@email.com">
                     <div class="invalid-feedback">
                         É obrigatório um email válido!
                     </div>
                 </div>
-                <div class="dropdown-divider"></div>
+
+                <!-- <div class="dropdown-divider"></div>
+
                 <div class="container pt-2 pb-2">
                     <h3>Endereço</h1>
                 </div>
@@ -181,7 +190,7 @@
                             Insira um CEP válido
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <button class="btn btn-dark btn-block" type="submit">Cadastrar</button>
             </form>
         </div>
